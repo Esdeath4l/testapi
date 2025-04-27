@@ -4,7 +4,10 @@ const app = require("./app");
 
 const server = http.createServer(app);
 
-server.listen(6000);
+const PORT = process.env.PORT || 6000;
+server.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
 
 const mongoose = require('mongoose');
 const dbURI = "mongodb+srv://RitikaS:Satoru2624@cuffcomfort.jr0kpke.mongodb.net/"; 
