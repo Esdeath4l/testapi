@@ -1,0 +1,8 @@
+{
+    "env":{
+        "MONGO_PS":"Satoru2624",
+        "JWT_KEY":"secret123",
+         "PORT": "3000"
+         
+    }
+}
